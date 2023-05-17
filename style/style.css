@@ -107,7 +107,11 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    padding: 206px 0 158px;
+    z-index: 4;
+}
+
+.hero__wrapper {
+    padding: 206px 0 171px;
 }
 
 .hero__title {
@@ -137,14 +141,11 @@ button {
     position: relative;
 }
 
-.hero__subtitle::before {
-    content: "";
-    position: absolute;
-    width: 400px;
-    height: 1px;
-    background-color: #D1FF5D;
-    top: -41px;
-    left: 188px;
+.hero__line {
+    max-width: 400px;
+    margin: 0 auto;
+    border-top: 1px solid #D1FF5D;
+    border-bottom: transparent;
 }
 
 .hero__advantages {
@@ -213,11 +214,12 @@ button {
     max-width: 496px;
     margin-bottom: 63px;
     position: relative;
+    z-index: 2;
 }
 
 .about__title::before {
     content: 'about us';
-    position:absolute;
+    position: absolute;
     text-transform: uppercase;
     font-family: 'Inter';
     font-style: normal;
@@ -228,6 +230,9 @@ button {
     top: -175px;
     right: -93px;
     z-index: 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #AFFC41;
+    color: #0D2228;
 }
 
 .about__desc {
@@ -292,4 +297,137 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+/* PROCESS */
+
+.process__wrapper {
+    max-width: 1536px;
+    margin-top: 81px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.process__wrapper::before {
+    content: 'What is the staffing agency process?';
+    position: absolute;
+    max-width: 611px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 31px 29px 31px 173px;
+    top: 241px;
+}
+
+.process__wrapper::after {
+    content: "";
+    position: absolute;
+    width: 610px;
+    height: 414px;
+    background: rgba(85, 201, 13, 0.1);
+    filter: blur(156px);
+    transform: rotate(116deg);
+    top: 70px;
+    left: 0;
+}
+
+.process__img {
+    max-width: 44%;
+    height: 641px;
+}
+
+.process__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.process__desc {
+    max-width: 56%;
+    margin-top: 74px;
+}
+
+.process__steps {
+    display: flex;
+}
+
+.process__graphic {
+    max-width: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.process__point {
+    max-width: 88px;
+    display: grid;
+    grid-template-columns: 21.5% 57% 21.5%;
+    grid-template-rows: 5px 64px 5px;
+}
+
+.process__point-bright {
+    width: 69px;
+    height: 69px;
+    background: linear-gradient(180deg, #D1FF5D 0%, #49FFF4 100%);
+    backdrop-filter: blur(3px);
+    border-radius: 50%;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    z-index: 5;
+}
+
+.process__point-bright p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    color: #05664F;
+    text-align: center;
+    padding: 13px 25px;
+}
+
+.process__point-dark {
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(209, 255, 93, 0.25) 0%, rgba(73, 255, 244, 0.11) 100%);
+    backdrop-filter: blur(3px);
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    z-index: 3;
+}
+
+.process__arrow {
+    padding: 10px 0;
+}
+
+.process__content {
+    margin-left: 34px;
+}
+
+.process__subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.process__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
 }
