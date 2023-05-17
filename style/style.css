@@ -36,9 +36,11 @@ button {
 /* HEADER */
 
 .header {
-    background: #0D2228;
+    background: rgba(13, 34, 40, 0.3);
+    mix-blend-mode: normal;
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 
 .header__wrapper {
@@ -104,9 +106,8 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
     height: 100vh;
-    padding: 206px 0 156px;
+    padding: 206px 0 158px;
 }
 
 .hero__title {
@@ -186,3 +187,109 @@ button {
 
 
 /* ABOUT */
+
+.about {
+    background-color: #0D2228;
+    padding-top: 103px;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__content {
+    width: 52%;
+}
+
+.about__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 130px;
+    line-height: 118px;
+    text-transform: uppercase;
+    color: #D1FF5D;
+    max-width: 496px;
+    margin-bottom: 63px;
+    position: relative;
+}
+
+.about__title::before {
+    content: 'about us';
+    position:absolute;
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 223px;
+    line-height: 229px;
+    max-width: 967px;
+    top: -175px;
+    right: -93px;
+    z-index: 0;
+}
+
+.about__desc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.about__line {
+    max-width: 743px;
+    margin: 20px 0;
+    height: 2px;
+    color: #ffffff;
+    opacity: 40%;
+}
+
+.about__img {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 16% 76% 8%;
+    grid-template-rows: 193px 136px 215px;
+    margin-top: 98px;
+}
+
+.about__img-lower {
+    max-width: 481px;
+    padding: 14px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.17);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    box-shadow: -30px 91px 166px 111px rgba(85, 201, 13, 0.15);
+    -webkit-box-shadow: -30px 91px 166px 111px rgba(85, 201, 13, 0.15);
+    -moz-box-shadow: -30px 91px 166px 111px rgba(85, 201, 13, 0.15);
+}
+
+.about__img-lower img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__img-upper {
+    max-width: 531px;
+    padding: 14px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.17);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+}
+
+.about__img-upper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
