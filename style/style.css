@@ -593,6 +593,17 @@ li {
     text-transform: uppercase;
     color: #05664F;
     padding-top: 64px;
+    position: relative;
+}
+
+.countries__title::before {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 3px;
+    background-color: #05664F;
+    left: -155px;
+    top: 120px;
 }
 
 .countries__wrapper {
@@ -693,3 +704,107 @@ li {
 
 
 /* PARTNERS */
+
+.partners {
+    background: radial-gradient(100.28% 100.28% at 50% 50%, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    background-color: #0D2228;
+    padding: 113px 251px 148px 251px;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+}
+
+.partners__abstract {
+    position: absolute;
+    z-index: 1;
+}
+
+.partners__abstract img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.partners__abstract-left {
+    width: 770px;
+    opacity: 0.7;
+    bottom: -520px;
+    left: -20px;
+    transform: rotate(-10deg);
+}
+
+.partners__abstract-rigth {
+    width: 772px;
+    top: -442px;
+    right: -220px;
+    opacity: 0.7;
+    transform: rotate(10deg);
+}
+
+.partners__wrapper {
+    padding: 46px 0 106px;
+    max-width: 1225px;
+    background: linear-gradient(98.14deg, rgba(255, 255, 255, 0.31) 5.19%, rgba(252, 252, 252, 0.21) 46.36%, rgba(248, 248, 248, 0.15) 93.43%);
+    border: 5px solid rgba(255, 255, 255, 0.1947);
+    border-radius: 10px;
+    position: relative;
+}
+
+.partners__wrapper::before {
+    content: '';
+    position: absolute;
+    width: 520px;
+    height: 385px;
+    left: -600px;
+    top: -300px;
+    background: rgba(85, 201, 13, 0.2);
+    filter: blur(195px);
+    transform: rotate(17deg);
+}
+
+.partners__wrapper::after {
+    content: '';
+    position: absolute;
+    width: 764px;
+    height: 459px;
+    left: 600px;
+    top: 150px;
+    background: rgba(85, 201, 13, 0.1);
+    filter: blur(195.453px);
+    transform: rotate(17.16deg);
+}
+
+.partners__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 118px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.partners__line {
+    max-width: 859px;
+    border-top: 1px solid #ffffff;
+    border-bottom: transparent;
+    margin: 0 auto;
+}
+
+.partners__logos {
+    margin-top: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partners__logo {
+    height: 113px;
+}
+
+.partners__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

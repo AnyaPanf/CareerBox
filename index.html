@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareerBox</title>
     <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
@@ -171,9 +173,9 @@
 
     <section class="about">
         <div class="container">
-            <h2 class="about__title">About us</h2>
             <div class="about__wrapper">
                 <div class="about__content">
+                    <h2 class="about__title">About us</h2>
                     <p class="about__desc">Our staffing company is dedicated to providing top-tier recruitment services
                         to our clients. We specialize in assessing the needs of each job vacancy and then finding the
                         ideal candidates to fill those positions.
@@ -377,12 +379,42 @@
 
     <section class="partners">
         <div class="container">
-            <div class="partners__wrapper"></div>
+            <div class="partners__wrapper">
+                <div class="partners__title">Our partners</div>
+                <hr class="partners__line">
+                <div class="partners__logos owl-carousel owl-theme">
+                    <div class="partners__logo partners__logo-sber">
+                        <img src="./images/Partners-sber.png" alt="Sber logo">
+                    </div>
+                    <div class="partners__logo partners__logo-amazon">
+                        <img src="./images/Partners-Amazon.png" alt="Amazon logo">
+                    </div>
+                    <div class="partners__logo partners__logo-rostelecom">
+                        <img src="./images/Partners-rostelecom.png" alt="Rostelecom logo">
+                    </div>
+                    <div class="partners__logo partners__logo-cotvec">
+                        <img src="./images/Partners-cotvec.png" alt="Cotvec logo">
+                    </div>
+                    <div class="partners__logo partners__logo-saturn">
+                        <img src="./images/Partners-saturn.png" alt="Saturn logo">
+                    </div>
+                </div>
+            </div>
+            <div class="partners__abstract partners__abstract-left">
+                <img src="./images/Partners-abstract-left.png" alt="Abstract form">
+            </div>
+            <div class="partners__abstract partners__abstract-rigth">
+                <img src="./images/Partners-abstract-rigth.png" alt="Abstract form">
+            </div>
         </div>
     </section>
 
 
 
+
+    <script src="./owl-carousel/jquery.min.js"></script>
+    <script src="./owl-carousel/owl.carousel.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
