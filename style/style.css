@@ -633,7 +633,7 @@ li {
 
 .countries__img {
     max-width: 1194px;
-    margin-left: 40px;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -656,22 +656,22 @@ li {
 
 .countries__tag-Americas {
     top: 187px;
-    left: 60px;
+    left: 135px;
 }
 
 .countries__tag-Europe {
     top: 90px;
-    left: 495px;
+    left: 570px;
 }
 
 .countries__tag-Asia {
     top: 210px;
-    right: 251px;
+    right: 180px;
 }
 
 .countries__tag-Africa {
     top: 240px;
-    left: 470px;
+    left: 550px;
 }
 
 .countries__lists {
@@ -683,7 +683,7 @@ li {
     border-radius: 10px;
     padding: 32px 72px;
     position: absolute;
-    right: 62.25%;
+    right: 56.25%;
     top: 37.2%;
     gap: 55px;
 }
