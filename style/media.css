@@ -1,0 +1,249 @@
+@media (max-width: 430px) and (hover: none) {
+
+    .container {
+        max-width: 430px;
+    }
+
+    .header {
+        position: static;
+        background-color: #010405;
+    }
+
+    /* HERO */
+
+    .hero {
+        background-color: #010405;
+        background-image: none;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .hero__wrapper {
+        padding: 68px 0;
+    }
+
+    .hero__title {
+        font-size: 72px;
+        line-height: 87px;
+    }
+
+    .hero__line {
+        max-width: 170px;
+    }
+
+    .hero__subtitle {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 41px auto 57px;
+    }
+
+    .hero__advantages {
+        max-width: 287px;
+        display: block;
+    }
+
+    .hero__advantage {
+        width: 70%;
+        height: 130px;
+        margin: 0 auto 30px;
+        padding: 13px 0 7px;
+    }
+
+    .hero__img {
+        width: 86px;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .hero__desc {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* ABOUT */
+
+    .about {
+        padding-top: 52px;
+    }
+
+    .about__wrapper {
+        display: block;
+        position: static;
+    }
+
+    .about__wrapper::before {
+        font-size: 114px;
+        line-height: 117px;
+        max-width: 499px;
+    }
+
+    .about__content {
+        width: 100%;
+    }
+
+    .about__title {
+        font-size: 70px;
+        line-height: 60px;
+        margin-bottom: 35px;
+        max-width: 268px;
+    }
+
+    .about__desc {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    .about__line {
+        display: none;
+    }
+
+    .about__img {
+        width: 100%;
+        margin-top: 13px;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .about__img-lower {
+        max-width: 323px;
+        padding: 9px;
+    }
+
+    .about__img-upper {
+        max-width: 357px;
+        padding: 9px;
+    }
+
+    /* PROCESS */
+
+    .process {
+        padding-top: 120px;
+    }
+
+    .process__wrapper {
+        width: 100%;
+        padding: 81px 0 55px;
+        display: block;
+        position: relative;
+    }
+
+    .process__wrapper::before {
+        top: -100px;
+        left: -120px;
+        position: absolute;
+    }
+
+    .process__question {
+        width: 348px;
+        font-size: 40px;
+        line-height: 50px;
+        margin: 0 0;
+    }
+
+    .process__question::before {
+        width: 416px;
+        height: 205px;
+        top: -28px;
+        left: -30px;
+    }
+
+    .process__desc {
+        max-width: 100%;
+    }
+
+    .process__graphic {
+        max-width: 62px;
+    }
+
+    .process__point {
+        max-width: 62px;
+        grid-template-rows: 4px 54px 4px;
+    }
+
+    .process__point-bright {
+        width: 49px;
+        height: 49px;
+    }
+
+    .process__point-bright p {
+        font-size: 26px;
+        line-height: 31px;
+        padding: 8px 18px;
+    }
+
+    .process__point-dark {
+        width: 49px;
+        height: 49px;
+    }
+
+    .process__arrow {
+        padding: 5px 0;
+    }
+
+    .process__content {
+        margin-left: 14px;
+    }
+
+    .process__subtitle {
+        font-size: 24px;
+        line-height: 17px;
+    }
+
+    .process__text {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    /* WHY */
+
+    .why__title {
+        font-size: 70px;
+        line-height: 63px;
+        margin-bottom: 63px;
+        padding-top: 72px;
+    }
+
+    .why__cards {
+        max-width: 100%;
+
+        display: block;
+    }
+
+    .why__card {
+        max-width: 100%;
+        grid-template-rows: 103px 324px 23px;
+    }
+
+    .why__card:not(:last-child) {
+        margin-bottom: 42px;
+    }
+
+    .why__card-up {
+        max-width: 370px;
+        height: 450px;
+        padding: 24px 25px 24px 48px;
+    }
+
+    .why__subtitle {
+        margin-top: 10px;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .why__text {
+        margin: 20px 0 30px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .why__btn {
+        padding: 10px 78px;
+    }
+
+    .why__card-dwn {
+        max-width: 370px;
+        height: 370px;
+    }
+}
