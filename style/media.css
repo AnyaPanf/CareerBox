@@ -1,4 +1,8 @@
-@media (max-width: 430px) and (hover: none) {
+@media (max-width: 430px) {
+
+    *:hover {
+        display: none;
+    }
 
     .container {
         max-width: 430px;
@@ -9,19 +13,29 @@
         background-color: #010405;
     }
 
-    /* HERO */
-
-    .hero {
-        background-color: #010405;
-        background-image: none;
+    .header__logo svg {
+        width: 127px;
+        height: 86px;
     }
 
     .header__menu {
         display: none;
     }
 
+    .header__burger {
+        display: block;
+    }
+
+    /* HERO */
+
+    .hero {
+        background-color: #010405;
+        background-image: none;
+        height: auto;
+    }
+
     .hero__wrapper {
-        padding: 68px 0;
+        padding: 48px 0 58px;
     }
 
     .hero__title {
@@ -41,7 +55,8 @@
 
     .hero__advantages {
         max-width: 287px;
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     .hero__advantage {
@@ -62,21 +77,39 @@
         line-height: 30px;
     }
 
+    .hero__btn-mob {
+        max-width: 360px;
+        height: 50px;
+        display: block;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 auto;
+        border: 3px solid #D1FF5D;
+        border-radius: 3px;
+        color: #ffffff;
+        margin-top: 44px;
+    }
+
     /* ABOUT */
 
     .about {
         padding-top: 52px;
+        overflow: visible;
     }
 
     .about__wrapper {
         display: block;
-        position: static;
     }
 
     .about__wrapper::before {
         font-size: 114px;
         line-height: 117px;
         max-width: 499px;
+        left: -58px;
+        top: -55px;
     }
 
     .about__content {
@@ -106,6 +139,15 @@
         grid-template-rows: repeat(3, auto);
     }
 
+    .about__img::before {
+        width: 381px;
+        height: 250px;
+        filter: blur(95px);
+        transform: rotate(12deg);
+        top: 50px;
+        left: 0;
+    }
+
     .about__img-lower {
         max-width: 323px;
         padding: 9px;
@@ -119,20 +161,33 @@
     /* PROCESS */
 
     .process {
-        padding-top: 120px;
+        padding-top: 150px;
+        overflow-x: hidden;
     }
 
     .process__wrapper {
         width: 100%;
-        padding: 81px 0 55px;
+        padding-bottom: 55px;
+        padding-top: 0;
         display: block;
         position: relative;
     }
 
     .process__wrapper::before {
-        top: -100px;
-        left: -120px;
+        content: url(/images/Process-abstract-mob.png);
+        top: -120px;
+        left: -10px;
         position: absolute;
+    }
+
+    .process__wrapper::after {
+        max-width: 180px;
+        height: 100px;
+        left: -35px;
+        top: 50px;
+        background: rgba(85, 201, 13, 0.3);
+        filter: blur(45px);
+        transform: rotate(12deg)
     }
 
     .process__question {
@@ -147,6 +202,7 @@
         height: 205px;
         top: -28px;
         left: -30px;
+        backdrop-filter: blur(10px);
     }
 
     .process__desc {
@@ -178,8 +234,12 @@
         height: 49px;
     }
 
-    .process__arrow {
+    .process__arrow:not(:last-child) {
         padding: 5px 0;
+    }
+
+    .process__arrow-mob {
+        display: block;
     }
 
     .process__content {
@@ -205,15 +265,27 @@
         padding-top: 72px;
     }
 
+    .why__wrapper {
+        padding-bottom: 82px;
+    }
+
+    .why__wrapper::before {
+        font-size: 96px;
+        line-height: 85px;
+        top: -185px;
+        left: -78px;
+    }
+
     .why__cards {
         max-width: 100%;
-
-        display: block;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
     }
 
     .why__card {
         max-width: 100%;
-        grid-template-rows: 103px 324px 23px;
+        grid-template-rows: 103px 324px 46px;
     }
 
     .why__card:not(:last-child) {
@@ -246,4 +318,161 @@
         max-width: 370px;
         height: 370px;
     }
+
+    /* COUNTRIES */
+
+    .countries__title {
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 3px;
+        padding-top: 36px;
+    }
+
+    .countries__title::before {
+        display: none;
+    }
+
+    .countries__wrapper::before {
+        font-size: 69px;
+        line-height: 82px;
+        top: -150px;
+        left: -5px;
+        max-width: 390px;
+    }
+
+    .countries__img {
+        width: 100%;
+        margin: 51px auto 121px;
+    }
+
+    .countries__tag {
+        height: 200px;
+    }
+
+    .countries__tag-Americas {
+        top: 45px;
+        left: -38px;
+    }
+
+    .countries__lists {
+        display: none;
+    }
+
+    .countries__tag-Europe {
+        top: 13px;
+        left: 116px;
+    }
+
+    .countries__tag-Asia {
+        top: 50px;
+        right: -25px;
+    }
+
+    .countries__tag-Africa {
+        top: 82px;
+        left: 50px;
+    }
+
+    /* PARTNERS */
+
+    .partners {
+        padding: 68px 0 82px;
+    }
+
+    .partners__abstract-left {
+        width: 333px;
+        bottom: -230px;
+        left: -22px;
+    }
+
+    .partners__abstract-rigth {
+        width: 373px;
+        top: -200px;
+        right: -130px;
+    }
+
+    .partners__wrapper {
+        width: 100%;
+        padding: 32px 27px 28px;
+        border: 2.25px solid rgba(255, 255, 255, 0.315);
+        border-radius: 10px;
+    }
+
+    .partners__title {
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .partners__line {
+        display: none;
+    }
+
+    .partners__logos {
+        margin-top: 28px;
+    }
+
+    .partners__logo {
+        height: 84px;
+    }
+
+    .partners__wrapper::before,
+    .partners__wrapper::after {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    .footer__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        padding: 54px 0 57px;
+    }
+
+    .footer__menu {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        column-gap: 45px;
+        align-items: center;
+        margin-bottom: 54px;
+    }
+
+    .footer__title {
+        font-size: 50px;
+        line-height: 61px;
+    }
+
+    .footer__line {
+        max-width: 300px;
+    }
+
+    .footer__contacts {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__logo {
+        margin-top: 0;
+        margin-left: -15px;
+    }
+
+    .footer__list {
+        margin-top: 0;
+        max-width: 170px;
+    }
+
+    .footer__logo svg {
+        width: 208px;
+        height: 130px;
+    }
+
+    .footer__social {
+        margin-top: 42px;
+    }
+
+    .footer__icons {
+        display: flex;
+        margin: 27px 27px 27px 0;
+    }
+
 }
