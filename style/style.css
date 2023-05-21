@@ -47,10 +47,6 @@ li {
     align-items: center;
 }
 
-.header__burger {
-    display: none;
-}
-
 .header__link {
     font-family: 'Open Sans';
     font-style: normal;
@@ -95,6 +91,11 @@ li {
     color: #000000;
 }
 
+.header__burger,
+.header__burger-btn {
+    display: none;
+}
+
 
 /* HERO */
 
@@ -135,7 +136,6 @@ li {
     text-transform: uppercase;
     color: #ffffff;
     margin: 41px auto 85px;
-    position: relative;
 }
 
 .hero__line {

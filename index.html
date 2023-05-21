@@ -128,19 +128,10 @@
                     </svg>
                 </div>
                 <div class="header__menu">
-                    <div class="header__burger">
-                        <svg width="36" height="23" viewBox="0 0 36 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M34.1 10H1.9C0.850659 10 0 10.5671 0 11.2667V11.4C0 12.0996 0.850659 12.6667 1.9 12.6667H34.1C35.1493 12.6667 36 12.0996 36 11.4V11.2667C36 10.5671 35.1493 10 34.1 10Z"
-                                fill="#FEFEFE" fill-opacity="0.8" />
-                            <path
-                                d="M34.1 20H1.9C0.850659 20 0 20.5671 0 21.2667V21.4C0 22.0996 0.850659 22.6667 1.9 22.6667H34.1C35.1493 22.6667 36 22.0996 36 21.4V21.2667C36 20.5671 35.1493 20 34.1 20Z"
-                                fill="#FEFEFE" fill-opacity="0.8" />
-                            <path
-                                d="M34.1 0H1.9C0.850659 0 0 0.567106 0 1.26667V1.4C0 2.09956 0.850659 2.66667 1.9 2.66667H34.1C35.1493 2.66667 36 2.09956 36 1.4V1.26667C36 0.567106 35.1493 0 34.1 0Z"
-                                fill="#FEFEFE" fill-opacity="0.8" />
-                        </svg>
-                    </div>
+                    <input class="header__burger" id="header__toggle" type="checkbox">
+                    <label class="header__burger-btn" for="header__toggle">
+                        <div></div>
+                    </label>
                     <nav class="header__nav">
                         <a href="#" target="_blank" class="header__link">About us</a>
                         <a href="#" target="_blank" class="header__link">Discover jobs</a>
@@ -179,8 +170,8 @@
                         </div>
                         <p class="hero__desc">Time Savings</p>
                     </div>
-                    <button class="hero__btn-mob">Get in touch</button>
                 </div>
+                <button class="hero__btn-mob">Get in touch</button>
             </div>
         </div>
     </section>
