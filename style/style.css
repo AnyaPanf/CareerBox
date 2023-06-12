@@ -104,12 +104,11 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     z-index: 4;
 }
 
 .hero__wrapper {
-    padding: 206px 0 171px;
+    padding: 206px 0 100px;
 }
 
 .hero__title {
@@ -314,7 +313,6 @@ li {
 }
 
 .process__wrapper {
-    max-width: 1536px;
     padding: 81px 0 130px;
     display: flex;
     justify-content: space-between;
@@ -361,8 +359,7 @@ li {
     height: 242px;
     background: rgba(255, 255, 255, 0.06);
     border-radius: 10px;
-    top: -28px;
-    left: -190px;
+    inset: -28px 0 0 -190px;
     z-index: -1;
 }
 
@@ -487,8 +484,7 @@ li {
     font-weight: 800;
     font-size: 180px;
     line-height: 160px;
-    top: -346px;
-    left: -210px;
+    inset: -346px 0 0 -210px;
     -webkit-text-stroke: 1px;
     mix-blend-mode: screen;
     background: rgba(255, 255, 255, 0.2);
@@ -609,8 +605,7 @@ li {
     width: 140px;
     height: 3px;
     background-color: #05664F;
-    left: -155px;
-    top: 120px;
+    inset: 120px 0 0 -155px;
 }
 
 .countries__wrapper {
@@ -626,8 +621,7 @@ li {
     font-size: 137px;
     line-height: 162px;
     text-transform: uppercase;
-    top: -250px;
-    left: -140px;
+    inset: -250px 0 0 -140px;
     width: 500px;
     color: #FFFFFF;
     text-shadow: rgb(5, 102, 79) 1px 0px 0px, rgb(5, 102, 79) 0.540302px 0.841471px 0px, rgb(5, 102, 79) -0.416147px 0.909297px 0px, rgb(5, 102, 79) -0.989992px 0.14112px 0px, rgb(5, 102, 79) -0.653644px -0.756802px 0px, rgb(5, 102, 79) 0.283662px -0.958924px 0px, rgb(5, 102, 79) 0.96017px -0.279415px 0px;
@@ -772,9 +766,7 @@ li {
     content: '';
     position: absolute;
     width: 764px;
-    height: 459px;
-    left: 600px;
-    top: 150px;
+    inset: 150px 0 0 600px;
     background: rgba(85, 201, 13, 0.1);
     filter: blur(195.453px);
     transform: rotate(17.16deg);
@@ -901,8 +893,7 @@ li {
 .footer__mail:hover::before {
     content: url(/images/Footer-img-mail.png);
     position: absolute;
-    left: 0;
-    top: 0;
+    inset: 0;
 }
 
 .footer__text {
