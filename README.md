@@ -1,14 +1,13 @@
-# Hello!
+# CareerBox
 
-This project is fulfilled for the first QA of W23-FE.
+ Page layout for a recrutment agency.
+ Study project.
 
-During the work I used:
-
-> flex
-> grid
-> pseudo elements and classes
-> madia query
-> BEM 
+## Technologies
+- HTML
+- CSS
+- CSS animation
+- Adaptive design
 
 
 
